@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+/* .sign {
+    width: 100%;
+    margin:20px ;
+    padding: 20px;
+    position: 100px;
+} */
+.profile {
+    padding-bottom: 20px;
+    margin: auto;
+    width: 50%;
+    text-align:center;
+    
+
+    
+}
+.box {
+    color: white;
+    font-family: sans-serif;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    
+    
+}
+.box img {
+    
+    width: 10%;
+    border-radius: 100%;
+    display: inline-block;
+    
+}
+.global {
+    height: 70px;
+    margin-top: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    
+    
+}
+.profile p {
+    font-size:  14px; 
+    font-weight: 600;
+    
+}
+.box-item a {
+    text-decoration: none;
+}
+.box-item {
+    margin:auto;
+    text-decoration: none;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    
+}
+.border-radius50 {
+    border-radius: 50px;
+}
+.background-pink {
+    background-color: rgb(235, 14, 124);
+    padding: 10px;
+}
+.border-radius10 {
+    border-radius: 10px;
+}
+.background-aqua {
+    background-color: aqua;
+    padding: 10px;
+    
+}
+
+.background-yellow {
+    background-color: yellow;
+    padding: 10px;
+   
+}

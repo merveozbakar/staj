@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* a[target=_blank] {
+            background-color: aquamarine;
+        } */
+        [title~=can] {
+            background-color: yellow;
+        }
+        [title|=can] {
+            background-color: hotpink;
+        }
+        [title^=can] {
+            background-color: red;
+        }
+        [title$=can] {
+            background-color: lawngreen;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com.tr/" title="link">Google</a>
+    <a href="https://www.hurriyet.com.tr/" title="can" target="_blank">Hürriyet</a>
+    <a href="https://www.fox.com.tr/" title="can boz" target="_top">Fox</a>
+</body>
+</html>

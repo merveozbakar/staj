@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    
+    .topmenu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: gray;
+        overflow: auto;
+    }
+   
+    .topmenu li {
+        float: left;
+    }
+    .topmenu li a {
+        display: inline-block;
+        color: white;
+        padding: 14px 15px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .xxx {
+        background-color: green;
+    }
+    .topmenu li a:hover {
+        background-color: rgb(64, 165, 212);
+    }
+    .clearfix {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .sidemenu li a {
+        display: block;
+        padding: 8px;
+        margin-bottom: 4px;
+        background-color: #eee;
+        text-decoration: none;
+        color: gray;
+        
+    }
+    .sidemenu li a:hover {
+        background-color: #555;
+        color: white;
+        
+    }
+    .sidemenu ul {
+        margin: 0;
+        padding: 0px;
+        list-style-type: none;
+    }
+    .sidemenu {
+        width: 25%;
+    }
+    .content {
+        width: 75%;
+    }
+    .column {
+        float: left;
+        padding: 15px;
+
+    }
+    *{
+        box-sizing:border-box ;
+    }
+    .header {
+        background-color: rgb(64, 165, 212);
+        padding: 15px;
+        text-align: center;
+    }
+
+    .footer {
+        background-color: green;
+        color: rgb(160, 160, 160);
+        padding:15px ;
+    }
+    h1 {
+        color: gray;
+    }
+</style>
+</head>
+<body>
+   
+   <ul class="topmenu">
+       <li class="xxx"><a href="#home">Home</a></li>
+       <li><a href="#news">News</a></li>
+       <li><a href="#contact">Contact</a></li>
+       <li><a href="#about">About</a></li>
+   </ul>
+   <div class="clearfix">
+    <div class="column sidemenu">
+        <ul>
+            <li><a href="#flight">The Flight</a> </li>
+            <li><a href="#city">The City</a> </li>
+            <li><a href="#island">The Island</a> </li>
+            <li><a href="#food">The Food</a> </li>
+            <li><a href="#people">The People</a> </li>
+            <li><a href="#history">The History</a> </li>
+            <li><a href="#oceans">The Oceans</a> </li>
+        </ul>
+    
+       </div>
+    
+       <div class="column content">
+           <div class="header">
+                <h1>The City</h1>
+           </div>
+           <h1>Chania</h1>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, totam! Consequuntur impedit delectus odit ex deleniti, eum itaque quae ratione?</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quo!</p>
+       </div>
+       
+   </div>
+   <div class="footer">
+       <p>Footer Text</p>
+   </div>
+</body>
+</html>

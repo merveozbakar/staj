@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img{
+            float: right;
+        }
+        .div1 {
+            width: 100px;
+            
+            border: 2px solid red;
+            float: right;
+            margin: 10px;
+            overflow: auto;
+        }
+        .class1 {
+            float:right;
+        }
+
+        .div1::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .box {
+            float: left;
+            width: 25%;
+            border: 1px solid red;
+            padding: 50px;
+            text-align: center;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .mmx{
+            margin-bottom: 10px;
+        }
+        .mmx::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            overflow: auto;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: inline-block;
+            color: white;
+            padding: 14px 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .xxx {
+            background-color: red;
+        }
+        li a:hover {
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>
+        <img src="1.jpg" alt="">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio provident maiores iste obcaecati quidem illum fugit dignissimos rem neque quia. Perferendis, rem ea error labore, magnam dolores porro vitae eius dolore architecto exercitationem nobis nam? Vero molestiae nostrum sint eius, recusandae error commodi quis aut tempora harum perferendis, quos odio veritatis asperiores autem inventore maiores incidunt laudantium eveniet voluptatum quibusdam! Veniam maxime hic minus ut, quae natus temporibus eaque animi? Repudiandae sunt reiciendis expedita deserunt asperiores, sint accusamus commodi blanditiis, voluptates neque suscipit in quae omnis, aspernatur pariatur quisquam quasi saepe laudantium iure quam porro temporibus ipsum. Quis, voluptate cum sapiente fuga molestias illo perferendis quidem iste laboriosam, eaque nihil odio deserunt! Perspiciatis, ratione. Aut optio, earum quos consequuntur, iure laboriosam quam quisquam amet maiores molestias odio exercitationem in esse minus quo impedit ullam voluptas quaerat? Quas quo totam officiis atque, nihil et, necessitatibus numquam molestiae id adipisci eligendi dolor? Adipisci beatae aliquid voluptatum tempore delectus laudantium accusamus aliquam! Optio assumenda dolore vitae nisi amet soluta ab commodi nobis delectus, voluptas aliquam expedita molestiae quod sequi ea corrupti nam hic voluptates similique? Ipsum, distinctio earum suscipit blanditiis nobis quas laboriosam animi dolore ut omnis illum recusandae natus, eos officiis, rem nemo! Illum cum nostrum veniam quod dolor obcaecati ducimus tempore eligendi distinctio molestias, cupiditate hic doloribus nesciunt! Maiores explicabo, corrupti nemo commodi quos temporibus voluptatum veniam ut doloremque, iure facilis dicta, fugiat quasi corporis hic enim accusamus in deserunt ea laboriosam quisquam dolor omnis. Voluptate eum veniam temporibus aperiam voluptates?
+    </p>
+    <hr>
+    <h2>Clear Kullanılmadan</h2>
+    <div class="div1">
+        <img src="2.jpg" alt="" class="class1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut ut corrupti at et sit voluptatibus praesentium dolore sed officia neque velit earum nemo, libero eligendi natus provident odit. Architecto, inventore.
+    </div>
+    <hr> 
+    <h2>Eşit Kutular</h2>
+   <div class="mmx">
+    <div class="box" style="background-color: silver;">
+        <p>Yazı</p>
+    </div>
+    <div class="box" style="background-color: silver;">
+        <p>Yazı</p>
+    </div>
+    <div class="box" style="background-color: silver;">
+        <p>Yazı</p>
+    </div>
+   </div>
+   <hr>
+   <ul>
+       <li class="xxx"><a href="#home">Home</a></li>
+       <li><a href="#news">News</a></li>
+       <li><a href="#contact">Contact</a></li>
+       <li><a href="#about">About</a></li>
+   </ul>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       /* body {
+           counter-reset: section;
+
+       }
+       h2::before {
+           counter-increment: section;
+           content: "Section" counter(section) ":";
+       }  */
+
+
+       body {
+           counter-reset: x;
+       }
+
+       h1 {
+           counter-reset: y;
+       }
+
+       h1::before {
+        counter-increment: x;
+        content: "Section" counter(x) ". ";
+       }
+       h2::before {
+           counter-increment: y;
+           content: counter(x) "." counter(y) ".";
+       }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- <h1>Can</h1>
+    <h2>Can</h2>
+    <h2>Can Boz</h2>
+    <h2>İbrahim Can Boz</h2> -->
+
+    <h1>Html Css Eğitimim</h1>
+    <h2>Html Eğitimim</h2>
+    <h2>Css Eğitimim</h2>
+
+    <h1>Script Eğitimim</h1>
+    <h2>Javascript Eğitimim</h2>
+    <h2>VBS Script Eğitimim</h2>
+</body>
+</html>

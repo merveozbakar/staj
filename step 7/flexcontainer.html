@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .can {
+            display: flex;
+            background-color: blue;
+            /* flex-direction: row;
+            flex-wrap: wrap;  */
+            /* flex-flow:  row wrap ; */
+            justify-content: center;
+            align-items: space-between;
+            align-content: space-between;
+            height: 400px;
+            
+        }
+
+        .can > div {
+            padding: 20px;
+            background-color: gray;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 60px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="can">
+        <div style=" order: 2;flex-grow: 1;">1</div>
+        <div style="order: 3; flex-grow: 1; align-self: flex-start;">2</div>
+        <div style=" order: 4;flex-grow: 3; align-self: center;">3</div>
+        <div style="order: 1;  flex: 0 300px;">4</div>
+        <div style="flex-shrink: 0;">5</div>
+         <div style="flex-basis: 400px;">6</div>
+        <!-- <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>   -->
+
+    </div>
+</body>
+</html>

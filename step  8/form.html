@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input[type=text] {
+            width: 150px;
+            padding: 12px 15px 12px 40px;
+            margin: 18px 0;
+            border: 3px solid red;
+            box-sizing: border-box;
+            border-radius: 14px;
+            color: white;
+            background-image: url('http://simpleicon.com/active-search.html');
+            background-repeat: no-repeat;
+            background-position:10px 5px;
+        }
+
+        input[type=text]:focus 
+        {
+            background-color: darkmagenta;
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+            height: 160px;
+            border: 3px solid red;
+            font-size: 20px;
+            resize: none;
+        }
+        select {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid red;
+            border-radius: 5px;
+            background-color: cornsilk;
+        }
+
+        input[type=button], input[type=reset], input[type=submit] {
+            padding: 16px 25px;
+            background-color: greenyellow;
+            border: none;
+            color: white;
+            margin: 5px 3px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="can">Adınızı Giriniz</label>
+        <input type="text" name="can" placeholder="Search...">
+
+        <label for="boz">Soyadınızı Giriniz</label>
+        <input type="text" name="boz">
+
+        <textarea> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ex vero asperiores at modi adipisci, suscipit perspiciatis! Porro vero expedita repellat illum pariatur. Facilis repellat ex fugiat quae hic quia dolorem commodi nesciunt sint ipsam eveniet, optio perspiciatis totam quasi saepe natus, cum mollitia eius recusandae ut! Ut, quod explicabo. Can Boz .....</textarea>
+    
+
+        <select name="ulke" >
+            <option value="tr">Türkiye</option>
+            <option value="fr">Français</option>
+            <option value="en">England</option>
+        </select>
+
+        <input type="button" value="Button">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

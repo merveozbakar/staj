@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      
+        .tab div {
+            height: 0px;
+            width: 100%;
+            background-color: red;
+            transition: all ease 1s;
+            visibility: hidden;
+            opacity: 0;
+        }
+        .tab div:target {
+            visibility: visible;
+            height: 100px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="#can1">1.İçerik</a></p>
+    <p><a href="#can2">2.İçerik</a></p>
+
+    <p id="can1">Can</p>
+    <p id="can2">Can Boz</p>
+<hr>
+    <div class="tab">
+        <a href="#link1">Link1</a>
+        <a href="#link2">Link2</a>
+        <a href="#link3">Link3</a>
+
+        <div id="link1">
+            <h1>Can</h1>
+        </div>
+        <div id="link2">
+            <h1>Can Boz</h1>
+        </div>
+        <div id="link3">
+            <h1>İbrahim Can Boz</h1>
+        </div>
+    </div>
+    
+</body>
+</html>

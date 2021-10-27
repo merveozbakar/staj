@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .can {
+            display: flex;
+            background-color: blue;
+
+
+            /* flex-direction:row;
+            flex-wrap:wrap ; */
+
+
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: space-around;
+            height: 400px;
+            
+
+        }
+        .can > div {
+            padding: 20px;
+            background-color: gray;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="can">
+        
+        <!-- <div style="order: 3; flex-grow: 1; ">1</div>
+        <div style="order: 4; flex-grow: 1;">2</div>
+        <div style="order: 1; flex-grow: 1;">3</div>
+        <div style="order: 2; flex-grow: 2;">4</div> -->
+       
+        <!-- <div style="flex: 0 0 300;">6</div>
+        <div style="flex-basis: 400px;">1</div>
+        <div style="flex-shrink: 0;">2</div>
+        <div style="flex-shrink: 0;">6</div> -->
+
+
+        <div style="align-self: center;">5</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>      
+    </div>
+</body>
+</html>
