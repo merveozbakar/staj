@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Curtain</title>
+    <meta name="description" content=""/>
+    <link rel="shortcut icon" href="src/img/logo.svg"/>
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="node_modules/@fancyapps/ui/dist/fancybox.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="stylesheet" href="src/css/style.css"/>
+  </head>
+  <body>
+    <header> 
+      <nav class="navbar navbar-expand-lg navbar-light container header p-0 py-4 flex-wrap">
+        <div class="searchbar">
+          <form action="">
+            <input type="text" placeholder="Ürün Ara..."/>
+            <button><i class="ri-search-line"></i></button>
+          </form>
+        </div><a class="logo m-auto navbar-brand" href=""><img src="src/img/logo.svg" alt=""/></a>
+        <div class="support-area ms-auto"><a class="text-dark" href=""><i class="fas fa-bullhorn me-1"></i><span>Kapmayalar </span></a><a class="support ms-3" href=""><i class="far fa-life-ring me-1"></i><span>Destek Hattı</span></a></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse w-100 mainMenu" id="mainMenu">
+          <ul class="navbar-nav justify-content-center d-flex w-100 mt-4">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="dropdown"><a class="nav-link" href="">Dropdown<i class="ri-arrow-drop-down-line"></i></a>
+              <ul class="dropdown-menuu">
+                <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+              </ul>
+            </li>
+            <li class="mega-menu"> <a class="nav-link" href="">Mega Menu<i class="ri-arrow-drop-down-line"></i></a>
+              <div class="mega-menu-area">
+                <div class="col"> 
+                  <ul> 
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                  </ul>
+                </div>
+                <div class="col"> 
+                  <ul> 
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                  </ul>
+                </div>
+                <div class="col"> 
+                  <ul> 
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                  </ul>
+                </div>
+                <div class="col"> <a href=""><img class="img-fluid" src="http://localhost:3000/src/img/slide1.png" alt=""/></a></div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container-xxl mt-4">
+      <div class="carousel slide carousel-fade" id="carouselExampleIndicators" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button class="active" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000"><img class="d-block w-100" src="src/img/slide1.png" alt="..."/></div>
+          <div class="carousel-item" data-bs-interval="1000"><img class="d-block w-100" src="src/img/slide1.png" alt="..."/></div>
+          <div class="carousel-item" data-bs-interval="1000"><img class="d-block w-100" src="src/img/slide1.png" alt="..."/></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+      </div>
+    </div>
+    <div class="container-xxl" style="margin-top: 100px; margin-bottom: 100px;">
+      <div class="categories-slider-area section-area"> 
+        <div class="section-title">
+          <h2>Perde Çeşitleri </h2>
+        </div>
+        <div class="section-description">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, architecto. Nostrum beatae quo asperiores deserunt.</p>
+        </div>
+        <div class="categories-slider-nav">
+          <div class="categories-slider-thumb" style="background-image: url(http://localhost:3000/src/img/slide1.png)"></div>
+          <div class="categories-slider-thumb" style="background-image: url(http://localhost:3000/src/img/slide1.png)"></div>
+          <div class="categories-slider-thumb" style="background-image: url(http://localhost:3000/src/img/slide1.png)"></div>
+          <div class="categories-slider-thumb" style="background-image: url(http://localhost:3000/src/img/slide1.png)"></div>
+          <div class="categories-slider-thumb" style="background-image: url(http://localhost:3000/src/img/slide1.png)"></div>
+          <div class="categories-slider-thumb" style="background-image: url(http://localhost:3000/src/img/slide1.png)"></div>
+          <div class="categories-slider-thumb" style="background-image: url(http://localhost:3000/src/img/slide1.png)"></div>
+          <div class="categories-slider-thumb" style="background-image: url(http://localhost:3000/src/img/slide1.png)"></div>
+          <div class="categories-slider-thumb" style="background-image: url(http://localhost:3000/src/img/slide1.png)"></div>
+          <div class="categories-slider-thumb" style="background-image: url(http://localhost:3000/src/img/slide1.png)"></div>
+          <div class="categories-slider-thumb" style="background-image: url(http://localhost:3000/src/img/slide1.png)"></div>
+          <div class="categories-slider-thumb" style="background-image: url(http://localhost:3000/src/img/slide1.png)"></div>
+        </div>
+        <div class="categories-slider mt-5">
+          <div class="slider-item">
+            <div class="row">
+              <div class="col-lg-6 col-12 align-items-center">
+                <h3 class="fs-5">Perde Çeşitleri</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ab!</p>
+                <ul> 
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <ol> 
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                </ol>
+              </div>
+              <div class="col-lg-6 col-12"><a href=""><img class="img-fluid" src="http://localhost:3000/src/img/slide1.png" alt=""/></a></div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <h3 class="fs-5">Perde Çeşitleri</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ab!</p>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <ol> 
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                </ol>
+              </div>
+              <div class="col-lg-6 col-12"><a href=""><img class="img-fluid" src="http://localhost:3000/src/img/slide1.png" alt=""/></a></div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <h3 class="fs-5">Perde Çeşitleri</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ab!</p>
+                <ul> 
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <ol> 
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                </ol>
+              </div>
+              <div class="col-lg-6 col-12"><a href=""><img class="img-fluid" src="http://localhost:3000/src/img/slide1.png" alt=""/></a></div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <h3 class="fs-5">Perde Çeşitleri</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ab!</p>
+                <ul> 
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <ol> 
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                </ol>
+              </div>
+              <div class="col-lg-6 col-12"><a href=""><img class="img-fluid" src="http://localhost:3000/src/img/slide1.png" alt=""/></a></div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <h3 class="fs-5">Perde Çeşitleri</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ab!</p>
+                <ul> 
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <ol> 
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                </ol>
+              </div>
+              <div class="col-lg-6 col-12"><a href=""><img class="img-fluid" src="http://localhost:3000/src/img/slide1.png" alt=""/></a></div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <h3 class="fs-5">Perde Çeşitleri</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ab!</p>
+                <ul> 
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <ol> 
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                </ol>
+              </div>
+              <div class="col-lg-6 col-12"><a href=""><img class="img-fluid" src="http://localhost:3000/src/img/slide1.png" alt=""/></a></div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <h3 class="fs-5">Perde Çeşitleri</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ab!</p>
+                <ul> 
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <ol> 
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                </ol>
+              </div>
+              <div class="col-lg-6 col-12"><a href=""><img class="img-fluid" src="http://localhost:3000/src/img/slide1.png" alt=""/></a></div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <h3 class="fs-5">Perde Çeşitleri</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ab!</p>
+                <ul> 
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <ol> 
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                </ol>
+              </div>
+              <div class="col-lg-6 col-12"><a href=""><img class="img-fluid" src="http://localhost:3000/src/img/slide1.png" alt=""/></a></div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <h3 class="fs-5">Perde Çeşitleri</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ab!</p>
+                <ul> 
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <ol> 
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                </ol>
+              </div>
+              <div class="col-lg-6 col-12"><a href=""><img class="img-fluid" src="http://localhost:3000/src/img/slide1.png" alt=""/></a></div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <h3 class="fs-5">Perde Çeşitleri</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ab!</p>
+                <ul> 
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <ol> 
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                </ol>
+              </div>
+              <div class="col-lg-6 col-12"><a class="categories-slider-thumb" href=""><img class="img-fluid" src="http://localhost:3000/src/img/slide1.png" alt=""/></a></div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <h3 class="fs-5">Perde Çeşitleri</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ab!</p>
+                <ul> 
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <ol> 
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                </ol>
+              </div>
+              <div class="col-lg-6 col-12"><a class="categories-slider-thumb" href=""><img class="img-fluid" src="http://localhost:3000/src/img/slide1.png" alt=""/></a></div>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <h3 class="fs-5">Perde Çeşitleri</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ab!</p>
+                <ul> 
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <ol> 
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet?</li>
+                </ol>
+              </div>
+              <div class="col-lg-6 col-12"><a class="categories-slider-thumb" href=""><img class="img-fluid" src="http://localhost:3000/src/img/slide1.png" alt=""/></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-xxl" style="margin-top: 100px; margin-bottom: 100px;">
+      <div class="section-area brands-slider-area">
+        <div class="section-title">
+          <h2>Markalar</h2>
+        </div>
+        <div class="section-description">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim doloribus modi beatae necessitatibus dolorum, labore hic amet totam ipsum id porro quo voluptatibus aliquid iure.</p>
+        </div>
+        <div class="brands-slider mt-5"><a href=""><img src="https://cdn.motor1.com/images/mgl/2RQQg/s3/volkswagen-new-logo.jpg" alt=""/></a><a href=""><img src="https://s.turkcell.com.tr/SiteAssets/Hakkimizda/genel-bakis/logolarimiz/TURKCELL_YATAY_ERKEK_LOGO.jpg" alt=""/></a><a href=""><img src="https://cdn.yenicaggazetesi.com.tr/news/2021/04/230420211028483455697.jpg" alt=""/></a><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Logo%21_Logo.svg/1200px-Logo%21_Logo.svg.png" alt=""/></a><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ikea_logo.svg/1280px-Ikea_logo.svg.png" alt=""/></a><a href=""><img src="https://ufukspor.net/images/clients/324287200346-415-puma-logo.png" alt=""/></a><a href=""><img src="https://1000logos.net/wp-content/uploads/2020/09/Carrefour-Logo.jpg" alt=""/></a><a href=""><img src="https://cdn.motor1.com/images/mgl/2RQQg/s3/volkswagen-new-logo.jpg" alt=""/></a><a href=""><img src="https://s.turkcell.com.tr/SiteAssets/Hakkimizda/genel-bakis/logolarimiz/TURKCELL_YATAY_ERKEK_LOGO.jpg" alt=""/></a><a href=""><img src="https://cdn.yenicaggazetesi.com.tr/news/2021/04/230420211028483455697.jpg" alt=""/></a><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Logo%21_Logo.svg/1200px-Logo%21_Logo.svg.png" alt=""/></a><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ikea_logo.svg/1280px-Ikea_logo.svg.png" alt=""/></a><a href=""><img src="https://ufukspor.net/images/clients/324287200346-415-puma-logo.png" alt=""/></a><a href=""><img src="https://1000logos.net/wp-content/uploads/2020/09/Carrefour-Logo.jpg" alt=""/></a></div>
+      </div>
+    </div>
+    <div class="container-xxl" style="margin-top: 100px; margin-bottom: 100px;">
+      <div class="section-area categories-area">
+        <div class="section-title">
+          <h2>Popüler Kategoriler</h2>
+        </div>
+        <div class="section-description">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim hic earum dignissimos!</p>
+        </div>
+        <div class="categories">
+          <div class="d-grid categories-items">
+            <div class="one shiny"><a href=""><span class="title">Uzun Perde </span><img src="src/img/image2.png" alt=""/></a></div>
+            <div class="two shiny"><a href=""><span class="title">Uzun Perde</span><img src="src/img/image2.png" alt=""/></a></div>
+            <div class="three shiny"><a href=""><span class="title">Uzun Perde </span><img src="src/img/image2.png" alt=""/></a></div>
+            <div class="four shiny"><a href=""><span class="title">Uzun Perde </span><img src="src/img/image2.png" alt=""/></a></div>
+            <div class="five shiny"><a href=""><span class="title">Uzun Perde </span><img src="src/img/image2.png" alt=""/></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-xxl" style="margin-top: 100px; margin-bottom: 100px;">
+      <div class="section-area mix-banners-area">
+        <div class="section-title">
+          <h2>Popüler Kategoriler - Mix Banners (1 Col - 5 Cols)</h2>
+        </div>
+        <div class="section-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio omnis quae quo repellendus sapiente sit temporibus tenetur, vero vitae.</p>
+        </div>
+        <div class="mix-banners row mt-5">
+          <div class="col mb-4 relative"><a href=""><img class="w-100" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+          <div class="col mb-4 relative"><a href=""><img class="w-100" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+          <div class="col mb-4 relative"><a href=""><img class="w-100" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+          <div class="col mb-4 relative"><a href=""><img class="w-100" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+          <div class="col mb-4 relative"><a href=""><img class="w-100" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+          <div class="col mb-4 relative"><a href=""><img class="w-100" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+          <div class="col mb-4 relative"><a href=""><img class="w-100" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+          <div class="col mb-4 relative"><a href=""><img class="w-100" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+          <div class="col mb-4 relative"><a href=""><img class="w-100" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-xxl" style="margin-top: 100px; margin-bottom: 100px;">
+      <div class="section-area double-banners-area">
+        <div class="section-title">
+          <h2>Popüler Kategoriler - Double Banners (2 Cols)</h2>
+        </div>
+        <div class="section-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio omnis quae quo repellendus sapiente sit temporibus tenetur, vero vitae.</p>
+        </div>
+        <div class="double-banners row mt-5">
+          <div class="col-md-6 col-sm-12 mb-4 relative"><a href=""><img class="img-fluid" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+          <div class="col-md-6 col-sm-12 mb-4 relative"><a href=""><img class="img-fluid" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+          <div class="col-md-6 col-sm-12 mb-4 relative"><a href=""><img class="img-fluid" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+          <div class="col-md-6 col-sm-12 mb-4 relative"><a href=""><img class="img-fluid" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-xxl" style="margin-top: 100px; margin-bottom: 100px;">
+      <div class="section-area quaternary-banners-area">
+        <div class="section-title">
+          <h2>Popüler Kategoriler - Quaternary Banners (4 Cols)</h2>
+        </div>
+        <div class="section-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio omnis quae quo repellendus sapiente sit temporibus tenetur, vero vitae.</p>
+        </div>
+        <div class="quaternary-banners row mt-5">
+          <div class="col-md-3 col-sm-12 mb-4 relative shiny"><a href=""><img class="scaleBig img-fluid" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+          <div class="col-md-3 col-sm-12 mb-4 relative darken"><a href=""><img class="img-fluid" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+          <div class="col-md-3 col-sm-12 mb-4 relative lighten"><a href=""><img class="img-fluid" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+          <div class="col-md-3 col-sm-12 mb-4 relative"><a href=""><img class="scaleSmall img-fluid" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+          <div class="col-md-3 col-sm-12 mb-4 relative"><a href=""><img class="img-fluid" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+          <div class="col-md-3 col-sm-12 mb-4 relative"><a href=""><img class="img-fluid" src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt=""/>
+              <div class="link-text-area">Evinizi bütünleyen güzellik...</div></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-xxl" style="margin-top: 100px; margin-bottom: 100px;">
+      <div class="section-area grid-products-area">
+        <div class="section-title">
+          <h2>Çok Satan Ürünler</h2>
+        </div>
+        <div class="section-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio omnis quae quo repellendus sapiente sit temporibus tenetur, vero vitae.</p>
+        </div>
+        <div class="grid-products row mt-5 d-grid">
+          <div class="product-card"><a href=""><img src="https://i.pinimg.com/originals/77/4b/fc/774bfcb4759af99da1ed7b5a39b14fee.jpg" alt=""/><span class="name">Lorem ipsum dolor sit amet.</span></a></div>
+          <div class="product-card"><a href=""><img src="https://i.pinimg.com/originals/77/4b/fc/774bfcb4759af99da1ed7b5a39b14fee.jpg" alt=""/><span class="name">Lorem ipsum dolor sit amet.</span></a></div>
+          <div class="product-card"><a href=""><img src="https://i.pinimg.com/originals/77/4b/fc/774bfcb4759af99da1ed7b5a39b14fee.jpg" alt=""/><span class="name">Lorem ipsum dolor sit amet.</span></a></div>
+          <div class="product-card"><a href=""><img src="https://i.pinimg.com/originals/77/4b/fc/774bfcb4759af99da1ed7b5a39b14fee.jpg" alt=""/><span class="name">Lorem ipsum dolor sit amet.</span></a></div>
+          <div class="product-card"><a href=""><img src="https://i.pinimg.com/originals/77/4b/fc/774bfcb4759af99da1ed7b5a39b14fee.jpg" alt=""/><span class="name">Lorem ipsum dolor sit amet.</span></a></div>
+          <div class="product-card"><a href=""><img src="https://i.pinimg.com/originals/77/4b/fc/774bfcb4759af99da1ed7b5a39b14fee.jpg" alt=""/><span class="name">Lorem ipsum dolor sit amet.</span></a></div>
+          <div class="product-card"><a href=""><img src="https://i.pinimg.com/originals/77/4b/fc/774bfcb4759af99da1ed7b5a39b14fee.jpg" alt=""/><span class="name">Lorem ipsum dolor sit amet.</span></a></div>
+          <div class="product-card"><a href=""><img src="https://i.pinimg.com/originals/77/4b/fc/774bfcb4759af99da1ed7b5a39b14fee.jpg" alt=""/><span class="name">Lorem ipsum dolor sit amet.</span></a></div>
+          <div class="product-card"><a href=""><img src="https://i.pinimg.com/originals/77/4b/fc/774bfcb4759af99da1ed7b5a39b14fee.jpg" alt=""/><span class="name">Lorem ipsum dolor sit amet.</span></a></div>
+          <div class="product-card"><a href=""><img src="https://i.pinimg.com/originals/77/4b/fc/774bfcb4759af99da1ed7b5a39b14fee.jpg" alt=""/><span class="name">Lorem ipsum dolor sit amet.</span></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-xxl" style="margin-top: 100px; margin-bottom: 100px;">
+      <div class="section-area slider-products-area">
+        <div class="section-title">
+          <h2>Yeni Ürünler</h2>
+        </div>
+        <div class="section-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio omnis quae quo repellendus sapiente sit temporibus tenetur, vero vitae.</p>
+        </div>
+        <div class="slider-products mt-5 row">
+          <div class="product-card"><a href=""><img src="https://i.pinimg.com/originals/77/4b/fc/774bfcb4759af99da1ed7b5a39b14fee.jpg" alt=""/><span class="name">Lorem ipsum dolor sit amet.</span></a></div>
+          <div class="product-card"><a href=""><img src="https://i.pinimg.com/originals/77/4b/fc/774bfcb4759af99da1ed7b5a39b14fee.jpg" alt=""/><span class="name">Lorem ipsum dolor sit amet.</span></a></div>
+          <div class="product-card"><a href=""><img src="https://i.pinimg.com/originals/77/4b/fc/774bfcb4759af99da1ed7b5a39b14fee.jpg" alt=""/><span class="name">Lorem ipsum dolor sit amet.</span></a></div>
+          <div class="product-card"><a href=""><img src="https://i.pinimg.com/originals/77/4b/fc/774bfcb4759af99da1ed7b5a39b14fee.jpg" alt=""/><span class="name">Lorem ipsum dolor sit amet.</span></a></div>
+          <div class="product-card"><a href=""><img src="https://i.pinimg.com/originals/77/4b/fc/774bfcb4759af99da1ed7b5a39b14fee.jpg" alt=""/><span class="name">Lorem ipsum dolor sit amet.</span></a></div>
+          <div class="product-card"><a href=""><img src="https://i.pinimg.com/originals/77/4b/fc/774bfcb4759af99da1ed7b5a39b14fee.jpg" alt=""/><span class="name">Lorem ipsum dolor sit amet.</span></a></div>
+          <div class="product-card"><a href=""><img src="https://i.pinimg.com/originals/77/4b/fc/774bfcb4759af99da1ed7b5a39b14fee.jpg" alt=""/><span class="name">Lorem ipsum dolor sit amet.</span></a></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer container-xxl d-grid">
+        <div class="info">
+          <div class="logo brand"><img src="src/img/logo.svg"/></div>
+          <ul>
+            <li><i class="ri-map-pin-line"></i><span>Samsun Mahallesi Samsun Sokak No:55 Atakum / SAMSUN</span></li>
+            <li><i class="ri-mail-line"></i><span>info@example.com</span></li>
+            <li><a href="tel:0555"><i class="ri-phone-line"></i><span>0555 555 5555</span></a></li>
+            <li><a href="#"><i class="ri-whatsapp-line"></i><span>0555 555 5555</span></a></li>
+          </ul>
+          <div class="social"><a class="me-2" href="#"><i class="ri-facebook-circle-line"></i></a><a class="me-2" href="#"><i class="ri-instagram-line"></i></a><a class="me-2" href="#"><i class="ri-twitter-line"></i></a></div>
+        </div>
+        <ul>
+          <li class="title">
+            <h6>KURUMSAL</h6>
+          </li>
+          <li><a href="#">Hakkımızda</a></li>
+          <li><a href="#">Tecrübemiz</a></li>
+          <li><a href="#">Misyonumuz</a></li>
+          <li><a href="#">Vizyonumuz</a></li>
+        </ul>
+        <ul>
+          <li class="title">
+            <h6>KURUMSAL</h6>
+          </li>
+          <li><a href="#">Hakkımızda</a></li>
+          <li><a href="#">Tecrübemiz</a></li>
+          <li><a href="#">Misyonumuz</a></li>
+          <li><a href="#">Vizyonumuz</a></li>
+        </ul>
+        <ul>
+          <li class="title">
+            <h6>KURUMSAL</h6>
+          </li>
+          <li><a href="#">Hakkımızda</a></li>
+          <li><a href="#">Tecrübemiz</a></li>
+          <li><a href="#">Misyonumuz</a></li>
+          <li><a href="#">Vizyonumuz</a></li>
+        </ul>
+      </div>
+      <div class="copyright text-center pb-5">Created with<img class="ms-2" src="src/img/global.png" height="40px"/></div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="node_modules/slick-carousel/slick/slick.js"></script>
+    <script src="node_modules/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>

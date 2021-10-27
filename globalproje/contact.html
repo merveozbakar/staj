@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Curtain</title>
+    <meta name="description" content=""/>
+    <link rel="shortcut icon" href="src/img/logo.svg"/>
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="node_modules/@fancyapps/ui/dist/fancybox.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="stylesheet" href="src/css/style.css"/>
+  </head>
+  <body>
+    <header> 
+      <nav class="navbar navbar-expand-lg navbar-light container header p-0 py-4 flex-wrap">
+        <div class="searchbar">
+          <form action="">
+            <input type="text" placeholder="Ürün Ara..."/>
+            <button><i class="ri-search-line"></i></button>
+          </form>
+        </div><a class="logo m-auto navbar-brand" href=""><img src="src/img/logo.svg" alt=""/></a>
+        <div class="support-area ms-auto"><a class="text-dark" href=""><i class="fas fa-bullhorn me-1"></i><span>Kapmayalar </span></a><a class="support ms-3" href=""><i class="far fa-life-ring me-1"></i><span>Destek Hattı</span></a></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse w-100 mainMenu" id="mainMenu">
+          <ul class="navbar-nav justify-content-center d-flex w-100 mt-4">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="dropdown"><a class="nav-link" href="">Dropdown<i class="ri-arrow-drop-down-line"></i></a>
+              <ul class="dropdown-menuu">
+                <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+              </ul>
+            </li>
+            <li class="mega-menu"> <a class="nav-link" href="">Mega Menu<i class="ri-arrow-drop-down-line"></i></a>
+              <div class="mega-menu-area">
+                <div class="col"> 
+                  <ul> 
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                  </ul>
+                </div>
+                <div class="col"> 
+                  <ul> 
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                  </ul>
+                </div>
+                <div class="col"> 
+                  <ul> 
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Link</a></li>
+                  </ul>
+                </div>
+                <div class="col"> <a href=""><img class="img-fluid" src="http://localhost:3000/src/img/slide1.png" alt=""/></a></div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container-xxl contact-container my-5">
+      <div class="contact-form mt-5 d-flex flex-wrap">
+        <div class="col-lg-6 col-md-12 col-12 contact-form-left">
+          <h2 class="fs-5">İletişim Formu</h2>
+          <form class="mt-3" action="">
+            <div class="float-input-box mb-3">
+              <input type="text" name="" placeholder=" "/>
+              <label for="">Adınız</label>
+            </div>
+            <div class="float-input-box mb-3">
+              <input type="email" name="" placeholder=" "/>
+              <label for="">E-Posta</label>
+            </div>
+            <div class="float-input-box mb-3">
+              <input type="tel" placeholder=" "/>
+              <label for="">Numara</label>
+            </div>
+            <div class="float-input-box mb-3">
+              <textarea name="" cols="30" rows="10" placeholder=" "></textarea>
+              <label for="">Mesajınız</label>
+            </div>
+            <input type="submit" value="Gönder"/>
+          </form>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12 contact-form-right p-3">
+          <iframe class="mt-4" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2995.049651722277!2d36.2344059!3d41.3512745!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40889834f3db4f7d%3A0x797a4428f30aebb1!2sGlobal%20Media!5e0!3m2!1str!2str!4v1625558429108!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer container-xxl d-grid">
+        <div class="info">
+          <div class="logo brand"><img src="src/img/logo.svg"/></div>
+          <ul>
+            <li><i class="ri-map-pin-line"></i><span>Samsun Mahallesi Samsun Sokak No:55 Atakum / SAMSUN</span></li>
+            <li><i class="ri-mail-line"></i><span>info@example.com</span></li>
+            <li><a href="tel:0555"><i class="ri-phone-line"></i><span>0555 555 5555</span></a></li>
+            <li><a href="#"><i class="ri-whatsapp-line"></i><span>0555 555 5555</span></a></li>
+          </ul>
+          <div class="social"><a class="me-2" href="#"><i class="ri-facebook-circle-line"></i></a><a class="me-2" href="#"><i class="ri-instagram-line"></i></a><a class="me-2" href="#"><i class="ri-twitter-line"></i></a></div>
+        </div>
+        <ul>
+          <li class="title">
+            <h6>KURUMSAL</h6>
+          </li>
+          <li><a href="#">Hakkımızda</a></li>
+          <li><a href="#">Tecrübemiz</a></li>
+          <li><a href="#">Misyonumuz</a></li>
+          <li><a href="#">Vizyonumuz</a></li>
+        </ul>
+        <ul>
+          <li class="title">
+            <h6>KURUMSAL</h6>
+          </li>
+          <li><a href="#">Hakkımızda</a></li>
+          <li><a href="#">Tecrübemiz</a></li>
+          <li><a href="#">Misyonumuz</a></li>
+          <li><a href="#">Vizyonumuz</a></li>
+        </ul>
+        <ul>
+          <li class="title">
+            <h6>KURUMSAL</h6>
+          </li>
+          <li><a href="#">Hakkımızda</a></li>
+          <li><a href="#">Tecrübemiz</a></li>
+          <li><a href="#">Misyonumuz</a></li>
+          <li><a href="#">Vizyonumuz</a></li>
+        </ul>
+      </div>
+      <div class="copyright text-center pb-5">Created with<img class="ms-2" src="src/img/global.png" height="40px"/></div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="node_modules/slick-carousel/slick/slick.js"></script>
+    <script src="node_modules/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>
